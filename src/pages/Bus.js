@@ -3,7 +3,6 @@ import {
     SafeAreaView,
     View,
     Text,
-    ScrollView,
     Image,
     FlatList,
     TouchableOpacity,
@@ -86,14 +85,19 @@ const DATA = [
 const Item = ({ busStopName, status }) => {
     return (
         <TouchableOpacity style={styles.routeItemContainer}>
-            <Image
-                style={styles.routeIcon}
-                source={
-                    (status == 1)
-                    ? require('../assets/img/bus.png')
-                    : require('../assets/img/circle.png')
-                }
-            />
+            {
+                (status == 1)
+                ?
+                <Image
+                    style={styles.busIcon}
+                    source={require('../assets/img/bus.png')}
+                />
+                :
+                <Image
+                    style={styles.circleIcon}
+                    source={require('../assets/img/circle.png')}
+                />
+            }
             <Text style={styles.routeText}>{busStopName}</Text>
         </TouchableOpacity>
     )
@@ -118,13 +122,11 @@ const Bus = () => {
             </View>
 
             {/* 버스 현황 */}
-            <ScrollView>
-                <FlatList
-                    data={DATA}
-                    renderItem={renderItem}
-                    keyExtractor={item => item.id}
-                />
-            </ScrollView>
+            <FlatList
+                data={DATA}
+                renderItem={renderItem}
+                keyExtractor={item => item.id}
+            />
 
             {/* 버스 하차벨 */}
             <View style={styles.busStopContainer}>
@@ -149,7 +151,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         borderBottomWidth: 1.5,
-        borderColor: '#FFD400',
+        borderColor: 'lightgray',
         padding: 20,
     },
     busInfoText: {
@@ -167,7 +169,12 @@ const styles = StyleSheet.create({
         marginVertical: 20,
         marginLeft: 30,
     },
-    routeIcon: {
+    circleIcon: {
+        height: 20,
+        width: 20,
+        marginRight: 20,
+    },
+    busIcon: {
         height: 20,
         width: 20,
         marginRight: 20,
@@ -179,7 +186,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderTopWidth: 1.5,
-        borderColor: '#FFD400',
+        borderColor: 'lightgray',
     },
     busStopBell: {
         backgroundColor: '#FF5555',

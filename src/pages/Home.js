@@ -7,7 +7,6 @@ import {
 	Text,
 	Image,
 	TouchableOpacity,
-	FlatList,
 	StyleSheet,
 } from 'react-native'
 
@@ -123,7 +122,7 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		justifyContent: 'space-between',
 		borderWidth: 1.5,
-		borderColor: '#FFD400',
+		borderColor: 'lightgray',
 		borderRadius: 10,
 		padding: 15,
 		marginVertical: 20,
@@ -156,7 +155,7 @@ const styles = StyleSheet.create({
 		justifyContent: 'space-between',
 		alignItems: 'center',
 		borderWidth: 1.5,
-		borderColor: '#FFD400',
+		borderColor: 'lightgray',
 		borderRadius: 10,
 		padding: 15,
 		marginTop: 15,
@@ -171,7 +170,7 @@ const styles = StyleSheet.create({
 	addFavoritesContainer: {
 		flexDirection: 'row',
 		borderWidth: 1.5,
-		borderColor: '#FFD400',
+		borderColor: 'lightgray',
 		borderRadius: 10,
 		padding: 10,
 		marginVertical: 15,
