@@ -10,6 +10,13 @@ const StackNav = () => {
     return (
         <Stack.Navigator>
             <Stack.Screen
+                name='BottomTabNav'
+                component={BottomTabNav}
+                options={{
+                    headerShown: false,
+                }}
+            />
+            <Stack.Screen
                 name='FindBus'
                 component={FindBus}
                 options={{
@@ -26,13 +33,6 @@ const StackNav = () => {
                         backgroundColor: '#FFD400',
                     },
                     headerTitleAlign: 'center',
-                }}
-            />
-            <Stack.Screen
-                name='BottomTabNav'
-                component={BottomTabNav}
-                options={{
-                    headerShown: false,
                 }}
             />
         </Stack.Navigator>
