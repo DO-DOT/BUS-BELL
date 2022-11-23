@@ -8,14 +8,7 @@ const Stack = createNativeStackNavigator()
 
 const StackNav = () => {
     return (
-        <Stack.Navigator>
-            <Stack.Screen
-                name='BottomTabNav'
-                component={BottomTabNav}
-                options={{
-                    headerShown: false,
-                }}
-            />
+        <Stack.Navigator initialRouteName='FindBus' >
             <Stack.Screen
                 name='FindBus'
                 component={FindBus}
@@ -24,15 +17,10 @@ const StackNav = () => {
                 }}
             />
             <Stack.Screen
-                name='Bus'
-                component={Bus}
+                name='BottomTabNav'
+                component={BottomTabNav}
                 options={{
-                    title: 'BUS',
-                    headerTintColor: '#FFF',
-                    headerStyle: {
-                        backgroundColor: '#FFD400',
-                    },
-                    headerTitleAlign: 'center',
+                    headerShown: false,
                 }}
             />
         </Stack.Navigator>
