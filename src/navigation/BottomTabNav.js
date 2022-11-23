@@ -1,8 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
-import StackNav from './StackNav'
 import Home from '../pages/Home'
-import Bus from '../pages/Bus'
 
 import {
     View,
@@ -25,10 +23,16 @@ const BottomTabNav = () => {
             <Tab.Screen
                 name='None'
                 component={None}
+                options={{
+                    headerShown: false,
+                }}
             />
             <Tab.Screen
                 name='Home'
                 component={Home}
+                options={{
+                    headerShown: false,
+                }}
             />
         </Tab.Navigator>
     )

@@ -1,7 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import FindBus from '../pages/FindBus'
-import Home from '../pages/Home'
 import Bus from '../pages/Bus'
 import BottomTabNav from './BottomTabNav'
 
@@ -14,7 +13,7 @@ const StackNav = () => {
                 name='FindBus'
                 component={FindBus}
                 options={{
-                    headerShown: false
+                    headerShown: false,
                 }}
             />
             <Stack.Screen
@@ -32,6 +31,9 @@ const StackNav = () => {
             <Stack.Screen
                 name='BottomTabNav'
                 component={BottomTabNav}
+                options={{
+                    headerShown: false,
+                }}
             />
         </Stack.Navigator>
     )
