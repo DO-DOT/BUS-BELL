@@ -86,7 +86,7 @@ const FindBus = ({ navigation }) => {
             }
             else {
                 console.log(myBus.current);
-                navigation.navigate('Home', myBus.current);
+                navigation.navigate('BottomTabNav', myBus.current);
                 // https://devbksheen.tistory.com/entry/React-Navigtion-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0
                 // navigation을 사용해 화면을 이동할때 navigate 또는 push 함수를 사용할 수 있는데 둘의 차이
             }
@@ -131,7 +131,7 @@ const FindBus = ({ navigation }) => {
 
     const connectBus = (peripheral) => {
         myBus.current = peripheral;
-        navigation.navigate('Home', myBus.current);
+        navigation.navigate('BottomTabNav', myBus.current);
     }
 
     // const testPeripheral = (peripheral) => {

@@ -13,12 +13,8 @@ const StackNav = () => {
             <Stack.Screen
                 name='FindBus'
                 component={FindBus}
-            />
-            <Stack.Screen
-                name='Home'
-                component={Home}
                 options={{
-                    headerShown: false,
+                    headerShown: false
                 }}
             />
             <Stack.Screen
