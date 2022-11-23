@@ -11,6 +11,10 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+// react-native-ble-manager
+import it.innove.BleManagerPackage;
+// react-native-ble-plx
+import com.polidea.reactnativeble.BlePackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
@@ -60,6 +64,8 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new BleManagerPackage(),
+      new BlePackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage()
     ));

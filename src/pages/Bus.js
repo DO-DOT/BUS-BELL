@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
     SafeAreaView,
     View,
@@ -84,7 +84,10 @@ const DATA = [
 
 const Item = ({ busStopName, status }) => {
     return (
-        <TouchableOpacity style={styles.routeItemContainer}>
+        <TouchableOpacity
+            style={styles.routeItemContainer}
+            onPress={() => null}
+        >
             {
                 (status == 1)
                 ?
