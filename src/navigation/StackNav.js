@@ -8,24 +8,12 @@ const Stack = createNativeStackNavigator()
 
 const StackNav = () => {
     return (
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName='FindBus' >
             <Stack.Screen
                 name='FindBus'
                 component={FindBus}
                 options={{
                     headerShown: false,
-                }}
-            />
-            <Stack.Screen
-                name='Bus'
-                component={Bus}
-                options={{
-                    title: 'BUS',
-                    headerTintColor: '#FFF',
-                    headerStyle: {
-                        backgroundColor: '#FFD400',
-                    },
-                    headerTitleAlign: 'center',
                 }}
             />
             <Stack.Screen

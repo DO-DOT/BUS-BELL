@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
     SafeAreaView,
     View,
@@ -130,16 +130,6 @@ const Bus = () => {
                 renderItem={renderItem}
                 keyExtractor={item => item.id}
             />
-
-            {/* 버스 하차벨 */}
-            <View style={styles.busStopContainer}>
-                <TouchableOpacity
-                    style={styles.busStopBell}
-                    onPress={() => null}
-                >
-                    <Text style={styles.busStopBellText}>동아대 입구에서 하차하기</Text>
-                </TouchableOpacity>
-            </View>
         </SafeAreaView>
     )
 }
@@ -185,24 +175,6 @@ const styles = StyleSheet.create({
     routeText: {
         fontSize: 20,
     },
-    busStopContainer: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderTopWidth: 1.5,
-        borderColor: 'lightgray',
-    },
-    busStopBell: {
-        backgroundColor: '#FF5555',
-        borderRadius: 10,
-        margin: 20,
-    },
-    busStopBellText: {
-        fontSize: 17,
-        fontWeight: 'bold',
-        color: '#FFF',
-        marginVertical: 15,
-        marginHorizontal: 30,
-    }
 })
 
 export default Bus
