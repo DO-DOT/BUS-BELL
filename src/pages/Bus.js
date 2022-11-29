@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
 import {
     SafeAreaView,
     View,
@@ -8,6 +8,8 @@ import {
     TouchableOpacity,
     StyleSheet,
 } from 'react-native'
+
+let busStop = []
 
 const DATA = [
     {
@@ -82,14 +84,15 @@ const DATA = [
     },
 ]
 
-const Item = ({ busStopName, status }) => {
+//const Item = ({ busStopName, status }) => {
+const Item = ({ busStopName, id }) => {
     return (
         <TouchableOpacity
             style={styles.routeItemContainer}
             onPress={() => null}
         >
             {
-                (status == 1)
+                (id == 4)
                 ?
                 <Image
                     style={styles.busIcon}
@@ -101,30 +104,74 @@ const Item = ({ busStopName, status }) => {
                     source={require('../assets/img/circle.png')}
                 />
             }
+            {/* {
+                (status == 1)
+                ?
+                <Image
+                    style={styles.busIcon}
+                    source={require('../assets/img/bus.png')}
+                />
+                :
+                <Image
+                    style={styles.circleIcon}
+                    source={require('../assets/img/circle.png')}
+                />
+            } */}
             <Text style={styles.routeText}>{busStopName}</Text>
         </TouchableOpacity>
     )
 }
 
 const renderItem = ({ item }) => (
-    <Item busStopName={item.busStopName} status={item.status} />
+    <Item busStopName={item.busStopName} id={item.id}
+    //status={item.status} 
+    />
 )
 
-const Bus = () => {
+const Bus = ({ route }) => {
+    const busNum = route.params.bus_num
+    const busCode = route.params.bus_code
+    const cityCode = JSON.parse(JSON.stringify(busCode.slice(0,3)))
+
+    useEffect(() => {
+        fetch('http://localhost:52273/getBusStopList', {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                busNum: busNum,
+                cityCode: cityCode,
+            }),
+        })
+        .then((res) => { return res.json() })
+        .then((datas) => {
+            datas = JSON.parse(JSON.stringify(datas).slice(1,JSON.stringify(datas).length-1))
+            datas = JSON.parse(JSON.stringify(datas.route))
+            datas.split(', ').forEach((data) => {
+                data = data.split(':')
+                data[0] = data[0].substring(1)
+                data[1] = data[1].substring(0,data[1].length-1)
+                busStop.push({id:data[0], busStopName:data[1]})
+            })
+        })
+        .catch((error) => console.log(error))
+    }, [])
+
     return (
         <SafeAreaView style={styles.container}>
             {/* 버스 정보 */}
             <View style={styles.busInfoContainer}>
                 <View>
                     <Text style={styles.busInfoText}>이번 정류장</Text>
-                    <Text style={styles.busInfoBusNameText}>동아대 입구</Text>
+                    <Text style={styles.busInfoBusNameText}>4번째 정류장</Text>
                 </View>
                 <View>
-                    <Text style={styles.busInfoBusNumText}>338</Text>
+                    <Text style={styles.busInfoBusNumText}>{busNum}</Text>
                 </View>
             </View>
 
-            {/* 버스 현황 */}
+            {/* 버스 노선도 및 현황 */}
             <FlatList
                 data={DATA}
                 renderItem={renderItem}

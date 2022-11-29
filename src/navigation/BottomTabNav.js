@@ -12,7 +12,10 @@ import focusedMap from '../assets/img/focusedMap.png'
 
 const Tab = createBottomTabNavigator()
 
-const BottomTabNav = () => {
+const BottomTabNav = ({ route }) => {
+    const busNum = route.params.bus_num
+    const busCode = route.params.bus_code
+
     return (
         <Tab.Navigator
             screenOptions={({ route }) => ({
@@ -39,6 +42,10 @@ const BottomTabNav = () => {
             <Tab.Screen
                 name='하차벨'
                 component={BusBell}
+                initialParams = {{
+                    bus_num: busNum,
+                    bus_code: busCode,
+                }}
                 options={{
                     headerShown: false,
                 }}
@@ -46,6 +53,10 @@ const BottomTabNav = () => {
             <Tab.Screen
                 name='노선도'
                 component={Bus}
+                initialParams = {{
+                    bus_num: busNum,
+                    bus_code: busCode,
+                }}
                 options={{
                     headerShown: false,
                 }}

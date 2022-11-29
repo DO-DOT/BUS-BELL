@@ -26,6 +26,7 @@ import {
     FlatList,
     TouchableHighlight,
     Alert,
+    TouchableOpacity,
 } from 'react-native';
   
 import {
@@ -86,7 +87,11 @@ const FindBus = ({ navigation }) => {
             }
             else {
                 console.log(myBus.current);
-                navigation.navigate('BottomTabNav', myBus.current);
+                navigation.navigate('BottomTabNav', {
+                    bus_num: printNum(myBus.current.advertising.serviceUUIDs[0]),
+                    bus_code: myBus.current.advertising.serviceUUIDs[1],
+                });
+
                 // https://devbksheen.tistory.com/entry/React-Navigtion-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0
                 // navigation을 사용해 화면을 이동할때 navigate 또는 push 함수를 사용할 수 있는데 둘의 차이
             }
@@ -131,7 +136,10 @@ const FindBus = ({ navigation }) => {
 
     const connectBus = (peripheral) => {
         myBus.current = peripheral;
-        navigation.navigate('BottomTabNav', myBus.current);
+        navigation.navigate('BottomTabNav', {
+            bus_num: printNum(myBus.current.advertising.serviceUUIDs[0]),
+            bus_code: myBus.current.advertising.serviceUUIDs[1],
+        });
     }
 
     // const testPeripheral = (peripheral) => {
@@ -214,7 +222,6 @@ const FindBus = ({ navigation }) => {
         ret = ret.replace('a', '-1');
         ret = ret.replace('b', '-2');
         ret = ret.replace('c', '-3');
-        ret = ret.concat('번');
         return ret;
     }
 
@@ -223,9 +230,11 @@ const FindBus = ({ navigation }) => {
         return (
             <TouchableHighlight onPress={() => connectBus(item) }>
                 <View style={[styles.row, {backgroundColor: color}]}>
-                    <Text style={{fontSize: 12, textAlign: 'center', color: '#333333', padding: 10}}>{printNum(item.advertising.serviceUUIDs[0])}</Text>
-                    <Text style={{fontSize: 10, textAlign: 'center', color: '#333333', padding: 2}}>RSSI: {item.rssi}</Text>
-                    <Text style={{fontSize: 8, textAlign: 'center', color: '#333333', padding: 2, paddingBottom: 20}}>{item.id}</Text>
+                    <Text style={ styles.numberText }>
+                        { printNum(item.advertising.serviceUUIDs[0]) }
+                    </Text>
+                    {/* <Text style={{fontSize: 10, textAlign: 'center', color: '#333333', padding: 2}}>RSSI: {item.rssi}</Text> */}
+                    {/* <Text style={{fontSize: 8, textAlign: 'center', color: '#333333', padding: 2, paddingBottom: 20}}>{item.id}</Text> */}
                 </View>
             </TouchableHighlight>
         );
@@ -233,7 +242,7 @@ const FindBus = ({ navigation }) => {
 
     return (
         <>
-            <StatusBar barStyle="dark-content" />
+            <StatusBar barStyle="dark-content" backgroundColor="#99CCFF"/>
             <SafeAreaView>
             <ScrollView
                 contentInsetAdjustmentBehavior="automatic"
@@ -245,18 +254,20 @@ const FindBus = ({ navigation }) => {
                 )}
                 <View style={styles.body}>
                 
-                <View style={{margin: 10}}>
-                    <Button 
-                    title={'내 버스 자동 찾기'}
-                    onPress={() => startScanAuto() } 
-                    />            
+                <View style={ styles.autoFindContainer }>
+                    <TouchableOpacity
+                        onPress={() => startScanAuto()}
+                    >
+                        <Text style={ styles.menuText }>버스 자동 찾기</Text>
+                    </TouchableOpacity>         
                 </View>
 
-                <View style={{margin: 10}}>
-                    <Button 
-                    title={'내 버스 수동 찾기'}
-                    onPress={() => startScanManual() } 
-                    />            
+                <View style={ styles.manualFindContainer }>
+                    <TouchableOpacity
+                        onPress={() => startScanManual()}
+                    >
+                        <Text style={ styles.menuText }>버스 수동 찾기</Text>
+                    </TouchableOpacity>            
                 </View>
 
                 {/* <View style={{margin: 10}}>
@@ -265,7 +276,7 @@ const FindBus = ({ navigation }) => {
 
                 {(list.length == 0) &&
                     <View style={{flex:1, margin: 20}}>
-                    <Text style={{textAlign: 'center'}}>No Bus</Text>
+                    <Text style={{textAlign: 'center'}}>버스 정보 없음</Text>
                     </View>
                 }
                 
@@ -317,6 +328,35 @@ const styles = StyleSheet.create({
         padding: 4,
         paddingRight: 12,
         textAlign: 'right',
+    },
+    numberText: {
+        fontSize: 20,
+        textAlign: 'center',
+        color: '#000000',
+        padding: 20,
+    },
+    autoFindContainer: {
+        backgroundColor: '#FF7F00',
+        width: 200,
+        height: 80,
+        alignSelf: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 30,
+        marginTop: 80,
+    },
+    manualFindContainer: {
+        backgroundColor: '#6DF6EA',
+        width: 200,
+        height: 80,
+        alignSelf: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 30,
+        marginTop: 80,
+    },
+    menuText: {
+        fontSize: 25,
     },
 });
 

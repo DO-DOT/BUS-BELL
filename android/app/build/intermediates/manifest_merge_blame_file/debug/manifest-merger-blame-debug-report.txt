@@ -9,109 +9,109 @@
 9        android:targetSdkVersion="31" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\debug\AndroidManifest.xml:5:5-77
-11-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\debug\AndroidManifest.xml:5:22-75
+11-->C:\Users\user\Desktop\BUS-BELL\android\app\src\debug\AndroidManifest.xml:5:5-77
+11-->C:\Users\user\Desktop\BUS-BELL\android\app\src\debug\AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:4:5-67
-12-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:4:22-64
+12-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:4:5-67
+12-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:4:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->[com.facebook.flipper:flipper:0.125.0] C:\Users\min01\.gradle\caches\transforms-3\03f04a3f11198ce3b7c6cedb9b41266b\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:5-76
-13-->[com.facebook.flipper:flipper:0.125.0] C:\Users\min01\.gradle\caches\transforms-3\03f04a3f11198ce3b7c6cedb9b41266b\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:22-73
+13-->[com.facebook.flipper:flipper:0.125.0] C:\Users\user\.gradle\caches\transforms-3\03f04a3f11198ce3b7c6cedb9b41266b\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.125.0] C:\Users\user\.gradle\caches\transforms-3\03f04a3f11198ce3b7c6cedb9b41266b\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:22-73
 14    <uses-permission android:name="android.permission.BLUETOOTH" />
-14-->[:react-native-ble-manager] C:\Users\min01\Documents\GitHub\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-68
-14-->[:react-native-ble-manager] C:\Users\min01\Documents\GitHub\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-65
+14-->[:react-native-ble-manager] C:\Users\user\Desktop\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-68
+14-->[:react-native-ble-manager] C:\Users\user\Desktop\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-65
 15    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-15-->[:react-native-ble-manager] C:\Users\min01\Documents\GitHub\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-74
-15-->[:react-native-ble-manager] C:\Users\min01\Documents\GitHub\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-71
+15-->[:react-native-ble-manager] C:\Users\user\Desktop\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-74
+15-->[:react-native-ble-manager] C:\Users\user\Desktop\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-71
 16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-16-->[:react-native-ble-manager] C:\Users\min01\Documents\GitHub\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
-16-->[:react-native-ble-manager] C:\Users\min01\Documents\GitHub\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
+16-->[:react-native-ble-manager] C:\Users\user\Desktop\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
+16-->[:react-native-ble-manager] C:\Users\user\Desktop\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
 17
 18    <uses-feature
-18-->[:react-native-ble-manager] C:\Users\min01\Documents\GitHub\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-15:36
+18-->[:react-native-ble-manager] C:\Users\user\Desktop\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-15:36
 19        android:name="android.hardware.bluetooth_le"
-19-->[:react-native-ble-manager] C:\Users\min01\Documents\GitHub\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-53
+19-->[:react-native-ble-manager] C:\Users\user\Desktop\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-53
 20        android:required="false" />
-20-->[:react-native-ble-manager] C:\Users\min01\Documents\GitHub\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-33
+20-->[:react-native-ble-manager] C:\Users\user\Desktop\BUS-BELL\node_modules\react-native-ble-manager\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-33
 21
 22    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
-22-->[com.github.Polidea:MultiPlatformBleAdapter:b0272c0fae040cc90f790481c54e8f2d45304339] C:\Users\min01\.gradle\caches\transforms-3\d1fe93580f309b482b4c513494da7ae9\transformed\jetified-MultiPlatformBleAdapter-b0272c0fae040cc90f790481c54e8f2d45304339\AndroidManifest.xml:14:5-88
-22-->[com.github.Polidea:MultiPlatformBleAdapter:b0272c0fae040cc90f790481c54e8f2d45304339] C:\Users\min01\.gradle\caches\transforms-3\d1fe93580f309b482b4c513494da7ae9\transformed\jetified-MultiPlatformBleAdapter-b0272c0fae040cc90f790481c54e8f2d45304339\AndroidManifest.xml:14:29-85
+22-->[com.github.Polidea:MultiPlatformBleAdapter:b0272c0fae040cc90f790481c54e8f2d45304339] C:\Users\user\.gradle\caches\transforms-3\ead1384301d933e647f45372b9780d2d\transformed\jetified-MultiPlatformBleAdapter-b0272c0fae040cc90f790481c54e8f2d45304339\AndroidManifest.xml:14:5-88
+22-->[com.github.Polidea:MultiPlatformBleAdapter:b0272c0fae040cc90f790481c54e8f2d45304339] C:\Users\user\.gradle\caches\transforms-3\ead1384301d933e647f45372b9780d2d\transformed\jetified-MultiPlatformBleAdapter-b0272c0fae040cc90f790481c54e8f2d45304339\AndroidManifest.xml:14:29-85
 23    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
-23-->[com.polidea.rxandroidble:rxandroidble:1.7.1] C:\Users\min01\.gradle\caches\transforms-3\15a2d4f76ac79eda8f3781bbcb0aef35\transformed\jetified-rxandroidble-1.7.1\AndroidManifest.xml:15:5-86
-23-->[com.polidea.rxandroidble:rxandroidble:1.7.1] C:\Users\min01\.gradle\caches\transforms-3\15a2d4f76ac79eda8f3781bbcb0aef35\transformed\jetified-rxandroidble-1.7.1\AndroidManifest.xml:15:29-83
+23-->[com.polidea.rxandroidble:rxandroidble:1.7.1] C:\Users\user\.gradle\caches\transforms-3\d9aab849dc5c5ae3bb274ddb0b626513\transformed\jetified-rxandroidble-1.7.1\AndroidManifest.xml:15:5-86
+23-->[com.polidea.rxandroidble:rxandroidble:1.7.1] C:\Users\user\.gradle\caches\transforms-3\d9aab849dc5c5ae3bb274ddb0b626513\transformed\jetified-rxandroidble-1.7.1\AndroidManifest.xml:15:29-83
 24
 25    <application
-25-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:6:5-25:19
+25-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:6:5-25:19
 26        android:name="com.bus.MainApplication"
-26-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:7:7-38
+26-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:7:7-38
 27        android:allowBackup="false"
-27-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:11:7-34
+27-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:11:7-34
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.7.0] C:\Users\min01\.gradle\caches\transforms-3\63a3df243d2d102452600006144a86df\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+28-->[androidx.core:core:1.7.0] C:\Users\user\.gradle\caches\transforms-3\63a3df243d2d102452600006144a86df\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 29        android:debuggable="true"
 30        android:icon="@mipmap/ic_launcher"
-30-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:9:7-41
+30-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:9:7-41
 31        android:label="@string/app_name"
-31-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:8:7-39
+31-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:8:7-39
 32        android:roundIcon="@mipmap/ic_launcher_round"
-32-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:10:7-52
+32-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:10:7-52
 33        android:theme="@style/AppTheme"
-33-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:12:7-38
+33-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:12:7-38
 34        android:usesCleartextTraffic="true" >
-34-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\debug\AndroidManifest.xml:8:9-44
+34-->C:\Users\user\Desktop\BUS-BELL\android\app\src\debug\AndroidManifest.xml:8:9-44
 35        <activity
-35-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\debug\AndroidManifest.xml:11:9-111
+35-->C:\Users\user\Desktop\BUS-BELL\android\app\src\debug\AndroidManifest.xml:11:9-111
 36            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-36-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\debug\AndroidManifest.xml:11:19-83
+36-->C:\Users\user\Desktop\BUS-BELL\android\app\src\debug\AndroidManifest.xml:11:19-83
 37            android:exported="false" />
-37-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\debug\AndroidManifest.xml:11:84-108
+37-->C:\Users\user\Desktop\BUS-BELL\android\app\src\debug\AndroidManifest.xml:11:84-108
 38        <activity
-38-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:13:7-24:18
+38-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:13:7-24:18
 39            android:name="com.bus.MainActivity"
-39-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:14:9-37
+39-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:14:9-37
 40            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-40-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:16:9-118
+40-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:16:9-118
 41            android:exported="true"
-41-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:19:9-32
+41-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:19:9-32
 42            android:label="@string/app_name"
-42-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:15:9-41
+42-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:15:9-41
 43            android:launchMode="singleTask"
-43-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:17:9-40
+43-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:17:9-40
 44            android:windowSoftInputMode="adjustResize" >
-44-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:18:9-51
+44-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:18:9-51
 45            <intent-filter>
-45-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:20:9-23:25
+45-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:20:9-23:25
 46                <action android:name="android.intent.action.MAIN" />
-46-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:21:13-65
-46-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:21:21-62
+46-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:21:13-65
+46-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:21:21-62
 47
 48                <category android:name="android.intent.category.LAUNCHER" />
-48-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:22:13-73
-48-->C:\Users\min01\Documents\GitHub\BUS-BELL\android\app\src\main\AndroidManifest.xml:22:23-70
+48-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:22:13-73
+48-->C:\Users\user\Desktop\BUS-BELL\android\app\src\main\AndroidManifest.xml:22:23-70
 49            </intent-filter>
 50        </activity>
 51
 52        <provider
-52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\min01\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 53            android:name="androidx.startup.InitializationProvider"
-53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\min01\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
 54            android:authorities="com.bus.androidx-startup"
-54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\min01\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
 55            android:exported="false" >
-55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\min01\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
 56            <meta-data
-56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\min01\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
 57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\min01\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
 58                android:value="androidx.startup" />
-58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\min01\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\b6fe4da57007a43d86a66ba4c66459bd\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
 59            <meta-data
-59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\min01\.gradle\caches\transforms-3\bc74a39e1ea23fea00bfcf2682a93948\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-3\bc74a39e1ea23fea00bfcf2682a93948\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
 60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-60-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\min01\.gradle\caches\transforms-3\bc74a39e1ea23fea00bfcf2682a93948\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+60-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-3\bc74a39e1ea23fea00bfcf2682a93948\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
 61                android:value="androidx.startup" />
-61-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\min01\.gradle\caches\transforms-3\bc74a39e1ea23fea00bfcf2682a93948\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+61-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-3\bc74a39e1ea23fea00bfcf2682a93948\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 62        </provider>
 63    </application>
 64
