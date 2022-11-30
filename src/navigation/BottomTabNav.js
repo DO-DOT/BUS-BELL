@@ -48,6 +48,7 @@ const BottomTabNav = ({ route }) => {
                 }}
                 options={{
                     headerShown: false,
+                    unmountOnBlur: true, // tab screen 이동할 때 새로 고침
                 }}
             />
             <Tab.Screen
@@ -59,6 +60,7 @@ const BottomTabNav = ({ route }) => {
                 }}
                 options={{
                     headerShown: false,
+                    unmountOnBlur: true, // tab screen 이동할 때 새로 고침
                 }}
             />
         </Tab.Navigator>
